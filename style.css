@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.card-content-wrapper {
+  max-width: 550px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+section:first-child {
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #333;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+select {
+  font-size: 18px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+h6 {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.to-do-list-header,
+.add-task-header,
+.sorting-options {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.deadline,
+.btn {
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713";
+  font-size: 18px;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 24px;
+}
+
+.remove-task {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-task {
+  background-color: #ff4444;
+  color: #ffffff;
+}
+
+.completed {
+  text-decoration: line-through;
+}

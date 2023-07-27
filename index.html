@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visma Frontend Internship Task</title>
+    <script src="./script.js" async></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>To-do App</h1>
+      </div>
+      <div class="page-content">
+        <section>
+          <div class="to-do-list-header">
+            <h2>My to-do list</h2>
+          </div>
+          <div class="sorting-options">
+            <label for="sortingSelect">Sort by:</label>
+            <select id="sortingSelect">
+              <option value="Recently added">Recently added</option>
+              <option value="Deadline">Deadline</option>
+              <option value="Recently completed">Recently completed</option>
+            </select>
+          </div>
+          <div id="tasksWrapper"></div>
+        </section>
+        <section>
+          <div class="add-task-header">
+            <h2>Add a task</h2>
+          </div>
+          <div>
+            <label for="description">
+              <h3>Description:</h3>
+            </label>
+            <input type="text" id="description" maxlength="160" required />
+            <h6>Up to 160 characters, Required</h6>
+          </div>
+          <div class="deadline">
+            <label for="deadline">
+              <h3>Deadline:</h3>
+            </label>
+            <input type="datetime-local" id="deadline" />
+            <h6>Optional</h6>
+          </div>
+          <div>
+            <button class="btn">Add task</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
